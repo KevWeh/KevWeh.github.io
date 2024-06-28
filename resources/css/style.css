@@ -49,3 +49,21 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* STYLING PROFILEIMAGE */
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-content p {
+    flex: 1;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 20px;
+    border: 2px solid #e0e0e0;
+}
