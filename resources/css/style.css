@@ -67,6 +67,60 @@ section {
     border: 2px solid #e0e0e0;
 }
 
+.certificates-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.certificate {
+    text-align: center;
+    margin: 1rem;
+}
+
+.thumbnail {
+    width: 150px;
+    cursor: pointer;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 footer {
     background-color: #1a1a1a;
     text-align: center;

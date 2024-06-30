@@ -15,4 +15,27 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     projectsSection.appendChild(projectList);
+
+    // Lightbox functionality
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const closeBtn = document.querySelector('.close');
+
+    thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('click', function() {
+            lightbox.style.display = 'block';
+            lightboxImg.src = this.getAttribute('data-full');
+        });
+    });
+
+    closeBtn.addEventListener('click', function() {
+        lightbox.style.display = 'none';
+    });
+
+    lightbox.addEventListener('click', function(event) {
+        if (event.target === lightbox) {
+            lightbox.style.display = 'none';
+        }
+    });
 });
