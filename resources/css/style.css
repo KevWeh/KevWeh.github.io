@@ -1,4 +1,12 @@
 /* Allgemeine Stile */
+html, body {
+    overflow-x: hidden; /* Entfernt den horizontalen Scrollbalken */
+}
+
+* {
+    box-sizing: border-box; /* Stellt sicher, dass Padding und Border in die Breite der Elemente einbezogen werden */
+}
+
 body {
     font-family: 'Courier New', Courier, monospace;
     background-color: #0d0d0d;
@@ -27,6 +35,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    margin: 0; /* Entfernt zusätzliche Margin */
 }
 
 nav ul li {
@@ -70,11 +79,13 @@ section {
 .certificates-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* Zeilenumbruch bei kleineren Bildschirmen */
 }
 
 .certificate {
     text-align: center;
     margin: 1rem;
+    flex: 1 1 45%; /* Flexbox-Eigenschaft für besseres Layout */
 }
 
 .thumbnail {
